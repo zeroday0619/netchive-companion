@@ -1,0 +1,36 @@
+{
+  "twitch": {
+    "username": "",
+    "password": "",
+    "cookies": {
+      "unique_id": "",
+      "unique_id_durable": "",
+      "unique_id_samesite_compat": "",
+      "prefers_color_scheme": "dark_preferred",
+      "prefers_color_scheme_samesite_compat": "dark_preferred",
+      "language": "ko",
+      "twitch.lohp.countryCode": "KR",
+      "spare_key": "",
+      "persistent": "",
+      "sudo": "",
+      "bits_sudo": "",
+      "login": "",
+      "name": "",
+      "api_token": "",
+      "twilight-user": {
+        "authToken": "",
+        "displayName": "",
+        "id": "",
+        "login": "",
+        "roles": {
+          "isStaff": false,
+          "version": 2
+        },
+        "auth-token": "",
+        "server_session_id": "",
+        "referrer_url": "https://dashboard.twitch.tv/"
+      }
+    },
+    "two_factor": null
+  }
+}
