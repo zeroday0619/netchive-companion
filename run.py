@@ -4,7 +4,7 @@ from apis import router
 
 app = FastAPI(
     name="Netchive companion",
-    description="Youtube-dl webserver interface",
+    description="TwitchX webserver interface",
     debug=False
 )
 
