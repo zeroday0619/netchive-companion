@@ -5,7 +5,6 @@ from pydantic import BaseModel
 class TwitchLogin(BaseModel):
     username: str
     password: str
-    cookies: dict
     two_factor: Optional[str]
 
 
