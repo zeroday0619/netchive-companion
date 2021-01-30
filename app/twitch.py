@@ -1,6 +1,6 @@
 from typing import Dict
 from TwitchX.stream import Stream
-from TwitchX.ext.login import Login
+from TwitchX.ext import TwitchAccount
 from app.config import load_config as _config
 
 config = _config()
@@ -14,7 +14,7 @@ class TwitchDL:
         :type user_name: str
         """
         self.st = Stream()
-        self.login = Login(
+        self.login = TwitchAccount(
             client_id="kimne78kx3ncx6brgo4mv6wki5h1ko",
             username=config.twitch.username,
             password=config.twitch.password
@@ -27,7 +27,7 @@ class TwitchDL:
         :return: twitch source
         :rtype: dict
         """
-        source = await self.login.login()
+        source = await self.login.get_cookie()
         return source
 
     async def get_stream_url(self) -> dict:
